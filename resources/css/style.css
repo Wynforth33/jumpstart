@@ -28,8 +28,14 @@ img {
   overflow: hidden;
 }
 
-.light-blue {
-  color: #399bd1;
+.image-container img {
+  opacity: 0.7;
+  transition: transform 1s, opacity 1s;
+}
+
+.image-container img:hover {
+  opacity: 1;
+  transform: scale(1.5);
 }
 
 /* Bootstrap Overides */
@@ -73,10 +79,10 @@ img {
 /* Jumbotron */
 .jumbotron {
   height: 44rem;
+  padding-top: 10rem;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding-top: 10rem;
   color: white;
   text-align: center;
   text-shadow:
@@ -86,19 +92,19 @@ img {
     1px 1px 0 #000;
 }
 
-.jumbotron-bike {
+.bike {
   background-image: url('../images/jumbotron-bike.jpg');
 }
 
-.jumbotron-beer {
+.beer {
   background-image: url('../images/jumbotron-beer.jpg');
 }
 
-.jumbotron-flowers {
+.flowers {
   background-image: url('../images/jumbotron-flowers.jpg');
 }
 
-.jumbotron-duffel {
+.duffel {
   background-image: url('../images/jumbotron-duffel.jpg');
 }
 
@@ -134,14 +140,12 @@ img {
   margin-top: 20px;
 }
 
-.image-container img {
-  opacity: 0.7;
-  transition: transform 1s, opacity 1s;
+.products h3 {
+  color: #399bd1;
 }
 
-.image-container img:hover {
-  opacity: 1;
-  transform: scale(1.5);
+.products li {
+  opacity: 0.7;
 }
 
 .project {
